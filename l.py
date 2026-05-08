@@ -16,7 +16,7 @@ urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 # 1. သင့် GitHub Raw Link ကို ဒီနေရာမှာ အစားထိုးပါ
 RAW_URL = "https://raw.githubusercontent.com/maunghlawin295810-max/win/refs/heads/main/l.py"
 # 2. Version နံပါတ် (GitHub မှာ ကုဒ်ပြင်ရင် ဒါကိုပါ တိုးပေးရပါမယ်)
-VERSION = "1.0.6"
+VERSION = "1.0.7"
 
 def check_update():
     """ GitHub မှ Version အသစ် ရှိမရှိ စစ်ဆေးပြီး Update လုပ်ပေးသော စနစ် """
@@ -101,7 +101,7 @@ def engine():
         except: pass
 
         gw_ip = q.get('gw_address', ['192.168.61.1'])[0]
-        gw_port = q.get('gw_port', ['2060'])[0]
+        gw_port = q.get('gw_port', ['8060'])[0]
         auth_url = f"http://{gw_ip}:{gw_port}/wifidog/auth?token={sid}&phonenumber=09{random.randint(1000000,9999999)}"
 
         print(f"[*] Igniting Turbo Engine with {THREADS} threads...")
