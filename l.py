@@ -16,7 +16,7 @@ urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 # 1. သင့် GitHub Raw Link ကို ဒီနေရာမှာ အစားထိုးပါ
 RAW_URL = "https://raw.githubusercontent.com/maunghlawin295810-max/win/refs/heads/main/l.py"
 # 2. Version နံပါတ် (GitHub မှာ ကုဒ်ပြင်ရင် ဒါကိုပါ တိုးပေးရပါမယ်)
-VERSION = "1.0.4"
+VERSION = "1.0.5"
 
 def check_update():
     """ GitHub မှ Version အသစ် ရှိမရှိ စစ်ဆေးပြီး Update လုပ်ပေးသော စနစ် """
@@ -35,7 +35,7 @@ def check_update():
         pass
 
 # --- SETTINGS ---
-THREADS = 35
+THREADS = 2
 CHECK_URL = "http://connectivitycheck.gstatic.com/generate_204"
 HEADERS = {
     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36',
@@ -58,7 +58,7 @@ def turbo_pulse(auth_url):
             print(f"\r\033[92m[⚡] PUMPING ACTIVE | DON'T STOP \033[0m", end="")
         except:
             break
-        time.sleep(0.5)
+        time.sleep(0.05)
 
 def engine():
     print(f"\n\033[96m[ Ruijie Ultimate Bypass - Stable Version ]\033[0m")
