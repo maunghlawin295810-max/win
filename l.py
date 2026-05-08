@@ -16,7 +16,7 @@ urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 # 1. သင့် GitHub Raw Link ကို ဒီနေရာမှာ အစားထိုးပါ
 RAW_URL = "https://raw.githubusercontent.com/maunghlawin295810-max/win/refs/heads/main/l.py"
 # 2. Version နံပါတ် (GitHub မှာ ကုဒ်ပြင်ရင် ဒါကိုပါ တိုးပေးရပါမယ်)
-VERSION = "1.0.1" 
+VERSION = "1.0.2" 
 
 def check_update():
     """ GitHub မှ Version အသစ် ရှိမရှိ စစ်ဆေးပြီး Update လုပ်ပေးသော စနစ် """
