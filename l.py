@@ -16,7 +16,7 @@ urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 # 1. သင့် GitHub Raw Link ကို ဒီနေရာမှာ အစားထိုးပါ
 RAW_URL = "https://raw.githubusercontent.com/maunghlawin295810-max/win/refs/heads/main/l.py"
 # 2. Version နံပါတ် (GitHub မှာ ကုဒ်ပြင်ရင် ဒါကိုပါ တိုးပေးရပါမယ်)
-VERSION = "1.0.3"
+VERSION = "1.0.4"
 
 def check_update():
     """ GitHub မှ Version အသစ် ရှိမရှိ စစ်ဆေးပြီး Update လုပ်ပေးသော စနစ် """
@@ -35,7 +35,7 @@ def check_update():
         pass
 
 # --- SETTINGS ---
-THREADS = 40
+THREADS = 35
 CHECK_URL = "http://connectivitycheck.gstatic.com/generate_204"
 HEADERS = {
     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36',
